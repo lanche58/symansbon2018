@@ -717,7 +717,7 @@ to{width:0}
 .content{height:100%;overflow:hidden;background:#000}
 .row{position:relative;overflow:hidden}
 .rw-l,.rw-r{position:absolute;top:0;height:100%;overflow:hidden}
-.rw-r{right:0;width:33.33%}
+.rw-r{left:66.67%;width:33.33%}
 .rw-l{left:0;width:66.67%}
 .rowbg{position:absolute;top:0;bottom:0}
 .rw-l .rowbg{left:0}
