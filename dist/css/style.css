@@ -1037,7 +1037,7 @@ to{width:0}
 .hot-label:before{content:"";position:absolute;right:0;top:0;width:106px;height:2px;background:#c60813}
 .hot-label .ti{text-transform:capitalize;color:#999;margin-bottom:8px}
 .hot-label a{display:block;font-size:15px;font-weight:700}
-.hot-label a:hover{color:#c60813}
+.hot-label a.act,.hot-label a:hover{color:#c60813}
 .pro1{padding:25px 0}
 .pro-list{margin-left:-20px}
 .pro-list li{width:25%;float:left;margin-bottom:60px}
@@ -1138,12 +1138,12 @@ to{width:0}
 .ab-btn.act:hover .ab-aw{background:#c60813}
 .ab-aw{border-radius:100%;width:32px;height:32px;background:#c60813;color:#fff;overflow:hidden;-webkit-transition:.3s;-moz-transition:.3s;transition:.3s}
 .ab-aw .sj{display:block;margin:12px 0 0 14px;border-left-width:4px}
-.ab2{color:#fff;padding:12% 0}
-.ab2 a{color:#fff}
+.ab2{color:#fff;color:rgba(255,255,255,.7);padding:12% 0}
+.ab2 a{color:#fff;color:rgba(255,255,255,.7)}
 .ab-tx .freeTx{font-size:18px;line-height:1.7;margin-top:30px}
 .ab3{padding-top:9%}
-.ab3 .fixbg{color:#fff;padding:10% 0;margin-top:110px;overflow:hidden}
-.ab3 .fixbg a{color:#fff}
+.ab3 .fixbg{color:#fff;color:rgba(255,255,255,.7);padding:10% 0;margin-top:110px;overflow:hidden}
+.ab3 .fixbg a{color:#fff;color:rgba(255,255,255,.7)}
 .ai-list li{margin-bottom:1px}
 .ai-list a{display:block;position:relative;padding:55px 150px 55px 50px;background:url(../images/black.png);-webkit-transition:.6s;-moz-transition:.6s;transition:.6s}
 .ai-list a:hover{-webkit-transform:translateX(40px);-moz-transform:translateX(40px);-ms-transform:translateX(40px);transform:translateX(40px)}
