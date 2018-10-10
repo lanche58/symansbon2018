@@ -68,8 +68,8 @@
         <div class="txts2">
             <div class="tb">
                 <div class="tbc">
-                    <p class="ti fwb transY trans">构建企业形象与行业影响力</p>
-                    <p class="name transY trans dly-2">提升今日销售与明日品牌</p>
+                    <p class="ti fwb">互联网+品牌管家<br>实现品牌资产弯道超车</p>
+                    <!-- <p class="name transY trans dly-2">提升今日销售与明日品牌</p> -->
                 </div>
             </div>
         </div>
@@ -303,5 +303,24 @@
 <script src="js/plugin.js"></script>
 
 <script src="js/page.js"></script>
+<script>
+    $(function(){
+        var userAgent = navigator.userAgent;
+        var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1; //判断是否IE<11浏览器
+        var fIEVersion = -1;
+        if (isIE) {
+            var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
+            reIE.test(userAgent);
+            fIEVersion = parseFloat(RegExp["$1"]);
+        }
+        if (fIEVersion === -1 || fIEVersion > 9) {
+            $('.pbanner .ti').animatext({
+                speed: 140,
+                effect: 'fadeInRight',
+                infinite: false
+            })
+        }
+    })
+</script>
 </body>
 </html>
