@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>赛门仕博</title>
+<title>赛门世博</title>
 <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -68,16 +68,12 @@
         <div class="txts2">
             <div class="tb">
                 <div class="tbc">
-                    <p class="ti fwb">互联网+品牌管家<br>实现品牌资产弯道超车</p>
-                    <!-- <p class="name transY trans dly-2">提升今日销售与明日品牌</p> -->
+                    <p class="ti fwb">构建企业形象与行业影响力</p>
+                    <p class="name">提升今日销售与明日品牌</p>
                 </div>
             </div>
         </div>
         <div class="mouse" id="mouse"></div>
-        <div class="p-search">
-        	<input type="text" class="p-search-inp s-input" value="请输入关键字搜索" />
-        	<input type="button" class="p-search-btn" />
-        </div>
     </div>
     
     <div class="pro-fix">
@@ -95,7 +91,7 @@
             </ul>
             <div class="hot-label">
                 <p class="ti">Hot label</p>
-                <a href="#" class="act">酒店</a>
+                <a href="#">酒店</a>
                 <a href="#">家居</a>
                 <a href="#">房地产</a>
                 <a href="#">快消品</a>
@@ -107,7 +103,6 @@
     
     <div class="container">
         <div class="pro1">
-        	<p class="p-search-tx">“关键字”的搜索结果：</p>
             <ul class="pro-list clearfix">
                 <li><div class="ma scapic">
                     <a href="pro-detail.html">
@@ -308,24 +303,5 @@
 <script src="js/plugin.js"></script>
 
 <script src="js/page.js"></script>
-<script>
-    $(function(){
-        var userAgent = navigator.userAgent;
-        var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1; //判断是否IE<11浏览器
-        var fIEVersion = -1;
-        if (isIE) {
-            var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
-            reIE.test(userAgent);
-            fIEVersion = parseFloat(RegExp["$1"]);
-        }
-        if (fIEVersion === -1 || fIEVersion > 9) {
-            $('.pbanner .ti').animatext({
-                speed: 140,
-                effect: 'fadeInRight',
-                infinite: false
-            })
-        }
-    })
-</script>
 </body>
 </html>

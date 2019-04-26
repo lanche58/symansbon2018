@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>赛门仕博</title>
+<title>赛门世博</title>
 <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -238,6 +238,8 @@
 <script src="js/page.js"></script>
 <script>
     $(function(){
+        $('.job-list li').eq(0).addClass('act');
+        $('.job-list li').eq(0).find('.b').stop().slideDown(500);
         $('.job-list .t').bind(_click, function() {
             var _t = $(this),
                 _b = $(this).siblings('.b'),
@@ -256,29 +258,7 @@
                     $('html,body').animate({ scrollTop: _f.offset().top - $mtoph }, 800);
                 },500);
             }
-        });
-
-        var userAgent = navigator.userAgent;
-        var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1; //判断是否IE<11浏览器
-        var fIEVersion = -1;
-        if (isIE) {
-            var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
-            reIE.test(userAgent);
-            fIEVersion = parseFloat(RegExp["$1"]);
-        }
-        if (fIEVersion === -1 || fIEVersion > 9) {
-            $('.pbanner .name').animatext({
-                speed: 140,
-                effect: 'zoomIn',
-                infinite: false
-            });
-            $('.pbanner .ti').animatext({
-                speed: 140,
-                effect: 'flipInY',
-                infinite: false
-            })
-        }
-
+        })
     })
 </script>
 </body>
